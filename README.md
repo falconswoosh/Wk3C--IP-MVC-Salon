@@ -27,14 +27,19 @@ Wk2-C--IP-WordCounter
     $ Atom index.html
 
 ## Specifications    
-| [X] |Item |Focus | Behavior | Input | Output | Reason for selecting sample Input/Output |
+| Implemented [X] |Item |Focus | Behavior | Input | Output | Reason for selecting sample Input/Output |
 |--|---|---|---|---|---|---|
-* [ ]|*`Stylist`*|Be able to add a stylist. |  Susan | Susan | Selected a first name for simplicity in creating first revision.
-* [ ]| *`Client`*| Be able to add a client. | Margaret | Margaret| Selected a first name for  simplicity in creating first revision.|
-|\[ ]| *`Stylist`*| Be able to see list of stylsts. |Click `here` to view all Stylists | **Active Stylists:** <br /> Susan<br />Mary<br />Henry | Chose simple list of first names to create first revision of app for look-and-feel.|
-| *`Client`*| Be able to see list of clients. |Click `here` to view all Clients | **Clients:** <br /> Margaret<br />James<br />Lisa | Chose simple list of first names to create first revision of app for look-and-feel.|
-| *`Stylist`*| Be able to enter details of a stylist. |Name: Susan<br />Work Days: M-F<br />Hours: 12pm-8pm | Name: Susan<br />Work Days: M-F<br />Hours: 12pm-8pm  | Chose minimal list to create first revision of app for look-and-feel.|
-| *`Client`*| Be able to enter details of a client. |Name: Margaret<br />Last cut: date<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs | Name: Margaret<br />Last cut: date<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little 3-inch bangs  | Chose minimal list to create first revision of app for look-and-feel.|
+|[&nbsp;&nbsp;]|1|*`Stylist`*|Be able to add a stylist. |  Susan | Susan | Selected a first name for simplicity in creating first revision.
+|[&nbsp;&nbsp;]|2| *`Client`*| Be able to add a client to a specific stylist. | **Select Stylist:**<br />Margaret<br />Jason<br /><br/>`If Margaret was clicked:`<br/>| Margaret| Selected a first name for  simplicity in creating first revision.|
+|[&nbsp;&nbsp;]|3| *`Client`*| Not be able to add a client if no stylsts have been added to the system or if a stylist has not been selected. |Click `Client Name` to view all Stylists | **Active Stylists:** <br /> Susan<br />Mary<br />Henry | Chose simple list of first names to create first revision of app for look-and-feel.|
+|[&nbsp;&nbsp;]|4| *`Stylist`*| Be able to see list of stylsts. |Click `here` to view all Stylists | **Active Stylists:** <br /> Susan<br />Mary<br />Henry | Chose simple list of first names to create first revision of app for look-and-feel.|
+|[&nbsp;&nbsp;]|5| *`Client`*| Be able to see list of clients. |Click `here` to view all Clients | **Clients:** <br /> Margaret<br />James<br />Lisa | Chose simple list of first names to create first revision of app for look-and-feel.|
+|[&nbsp;&nbsp;]|6| *`Stylist`*| Be able to enter details of a stylist. |Name: Susan<br />Work Days: Mon-Fri<br />Hours: 12pm-8pm | Name: Susan<br />Work Days: Mon-Fri<br />Hours: 12pm-8pm  | Chose minimal list to create first revision of app for look-and-feel.|
+|[&nbsp;&nbsp;]|7| *`Client`*| Be able to enter details of a client. |Name: Margaret<br />Last cut: 2017-10-19<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs | Name: Margaret<br />Last cut: 2017-10-19<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little 3-inch bangs  | Chose minimal list to create first revision of app for look-and-feel. Date format is YYYY-MM-DD.|
+|[&nbsp;&nbsp;]|8| *`Client`*| Be able to update details of a client. |*`FROM`*<br />Name: Margaret<br />Last cut: 2017-10-19<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs <br /><br/>*`To`*<br />Name: Margaret<br />Last cut: `2017-12-15`<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs| Name: Margaret<br />Last cut: `2017-12-15`<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs  | Chose minimal list to create first revision of app for look-and-feel.|
+|[&nbsp;&nbsp;]|9| *`Stylist`*| Be able to update details of a stylist. |*`FROM`*<br />Name: Susan<br />Work Days: `Mon-Fri`<br />Hours: 12pm-8pm <br /><br/>*`To`*<br />Name: Susan<br />Work Days: `Mon-Thu`<br />Hours: 12pm-8pm |Name: Susan<br />Work Days: `Mon-Thu`<br />Hours: 12pm-8pm | Chose minimal list to create first revision of app for look-and-feel.|
+|[&nbsp;&nbsp;]|10| *`Client`*| Be able to delete a client. |Name: Margaret<br />Last cut: 2017-10-19<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs|  | |
+|[&nbsp;&nbsp;]|11| *`Client`*| Be able to select a client and within the client view, have a field identifying which stylist they are associated with. |**Click on a client to View** Margaret| Name: Margaret<br />`Stylist: Susan`<br />Last cut: 2017-10-19<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs| | |
 
 ## Known Bugs
 
