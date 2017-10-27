@@ -31,8 +31,8 @@ This website is our third project for C# course. This site emulates one for a ha
     * (When done, CTRL-C to stop the server as well as open MAMP and click on "Stop Servers".)      
 * Open a browser and navigate to http://localhost:5000 to interact with this project as a user.
 * If you choose, you may use your editor-of-choice to edit and modify this project.
-    * For example, if your editor is [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/), issue the following in your bash:
-    $ Atom index.html
+    * For example, if your editor is [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/), issue the following in your bash if wishing to edit the Index.cshtml file from within the ...Views/Home directory for this project:
+    $ Atom Index.cshtml
 
 ## Specifications    
 | Implemented [X] |Item |Focus | Behavior | Input | Output | Comments |
@@ -73,7 +73,7 @@ Alan Falcon email: [falconswoosh@gmail.com](falconswoosh@gmail.com)
 | HTML:<td colspan=2> http://htmlreference.io |
 | Javascript:<td colspan=2> https://www.javascript.com/ |
 | Javascript Jquery<td colspan=2> https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiBj_WJlbnWAhWBLhQKHfHUAQEQFggmMAA&url=https%3A%2F%2Fjquery.com%2F&usg=AFQjCNFnz7C6MAXGLm7pVcOD_LrOjJUUiA |
-| MAMP (contains among other things Apache server, MySQL, and phpMyAdmin)<td colspan=2> https://en.wikipedia.org/wiki/Markdown<br>• Select either Windows or MAC<br/>• Once installed, click on 'Preferences' &#124; click on "Set Web & MySQL ports to 80 & 3306".<br/>&nbsp;&nbsp;**WARNING:**&nbsp; Otherwise you may choose to identify certain ports yourself based on your system configuration. If doing this however, every line in the code referring to port `3306` will need to be modified with the port for mySQL. |
+| MAMP (contains Apache server, MySQL, phpMyAdmin, etc.)<td colspan=2> https://en.wikipedia.org/wiki/Markdown<br>• Select either Windows or MAC<br/>• Once installed, click on 'Preferences' &#124; click on "Set Web & MySQL ports to 80 & 3306".<br/>&nbsp;&nbsp;**WARNING:**&nbsp; Otherwise you may choose to identify certain ports yourself based on your system configuration. If doing this however, every line in the code referring to port `3306` will need to be modified with the port for mySQL. |
 | Markdown<td colspan=2> https://www.mamp.info/en/downloads/|
 | Mono |http://www.mono-project.com/download/#download-win | http://www.mono-project.com/download/#download-mac |
 

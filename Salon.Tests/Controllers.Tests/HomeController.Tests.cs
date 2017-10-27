@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using Rename.Controllers;
-using Rename.Models;
+using Salon.Controllers;
+using Salon.Models;
 
-namespace Rename.Tests
+namespace Salon.Tests
 {
     [TestClass]
     public class HomeControllerTests
