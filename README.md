@@ -10,9 +10,9 @@ This website is our third project for C# course. This site emulates one for a ha
 
 ## Setup/Installation Requirements
 
-* You may view this project at: https://falconswoosh.github.io/Wk3-C--IP-Salon
+* You may view this project at: https://falconswoosh.github.io/Wk3C--IP-MVC-Salon
 Wk2-C--IP-WordCounter
-* This project may be cloned from:  https://github.com/falconswoosh/Wk3-C--IP-Salon.git
+* This project may be cloned from:  https://github.com/falconswoosh/Wk3C--IP-MVC-Salon.git
 * Install .NET SDK, .NET Runtime, and Mono (refer to links in 'Technologies Used' section below).
 * Clone to your local system
 * Open the project folder "Wk3-C--IP-Salon"
@@ -27,12 +27,14 @@ Wk2-C--IP-WordCounter
     $ Atom index.html
 
 ## Specifications    
-| Behavior | Input | Output | Comments |
-|---|---|---|---|
-| Be able to input a (search) word. |  `Search WORD`: car | N/A | "car" as an input was chosen since it's short and its three letters may be contained in other words not an exact match to "car".
-| Additionally, have another input for a sentence to be searched and allow both the search Word and Sentence to be submitted via a submit button. |`SENTENCE to be Searched`: As a  caring car owner, I maintain my car as well as respect other folks' property. At parking lots, I ensure I open my car door carefully so as  not to hit the other car with my car door.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(button clicked) | N/A| The sample sentence input was used  due to two other words being used that  are not a full word match.|
-| Lastly, having clicked on the submit button the site responds via a separate page the results of having searched for a word in a sentence provided the site. The response will be how many times the word appears in the sentence. *`ONLY`* full word matches are counted. |`Search WORD`: car<br />`SENTENCE to be Searched`: As a caring car owner, I maintain mycar as well as respect other folks' property. At parking lots, I ensure I open my car door carefully so as  not to hit the other car with my car door. | `car` occurs 5 times<br />`Search WORD`: car<br />`SENTENCE Searched`: As a caring caring **car** owner, I maintain my**car** as well as respect other folks' property. At parking lots, I ensure I open my **car** door carefully so as  not to hit the other **car** with my **car** door. | N/A |
-
+| [X] |Item |Focus | Behavior | Input | Output | Reason for selecting sample Input/Output |
+|--|---|---|---|---|---|---|
+* [ ]|*`Stylist`*|Be able to add a stylist. |  Susan | Susan | Selected a first name for simplicity in creating first revision.
+* [ ]| *`Client`*| Be able to add a client. | Margaret | Margaret| Selected a first name for  simplicity in creating first revision.|
+|\[ ]| *`Stylist`*| Be able to see list of stylsts. |Click `here` to view all Stylists | **Active Stylists:** <br /> Susan<br />Mary<br />Henry | Chose simple list of first names to create first revision of app for look-and-feel.|
+| *`Client`*| Be able to see list of clients. |Click `here` to view all Clients | **Clients:** <br /> Margaret<br />James<br />Lisa | Chose simple list of first names to create first revision of app for look-and-feel.|
+| *`Stylist`*| Be able to enter details of a stylist. |Name: Susan<br />Work Days: M-F<br />Hours: 12pm-8pm | Name: Susan<br />Work Days: M-F<br />Hours: 12pm-8pm  | Chose minimal list to create first revision of app for look-and-feel.|
+| *`Client`*| Be able to enter details of a client. |Name: Margaret<br />Last cut: date<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little bit of bangs | Name: Margaret<br />Last cut: date<br />Cut Style: Bob <br />Length: Short<br />Comments: Likes to have a little 3-inch bangs  | Chose minimal list to create first revision of app for look-and-feel.|
 
 ## Known Bugs
 
