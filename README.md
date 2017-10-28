@@ -27,7 +27,7 @@ This website is our third project for C# course. This site is for a hair salon w
     <td>/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot</td>
   </tr>  
   <tr>
-    <td colspan="2">`mysql>` CREATE DATABASE alan_falcon;<br/>`mysql>` USE alan_falcon;<br/>`mysql>` CREATE TABLE stylists (sId serial PRIMARY KEY, sLastName VARCHAR(255), sFirstName VARCHAR(255));<br/>`mysql>` CREATE TABLE clients (cId serial PRIMARY KEY,cLastName VARCHAR(255), cFirstName VARCHAR(255));</td>            
+    <td colspan="2">`mysql>` CREATE DATABASE alan_falcon;<br/>`mysql>` USE alan_falcon;<br/>`mysql>` CREATE TABLE stylists (sId serial PRIMARY KEY, sLastName VARCHAR(255), sFirstName VARCHAR(255));<br/>`mysql>` CREATE TABLE clients (cId serial PRIMARY KEY,cLastName VARCHAR(255), cFirstName VARCHAR(255));<br/>`If wishing to modify the code`, you may also need to create the test database. If so, repeat the mysql steps above by replacing 'alan_falcon' with 'alan_falcon_test'.</td>    
   </tr>
 </table>
 
