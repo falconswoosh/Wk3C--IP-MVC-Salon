@@ -15,9 +15,9 @@ This website is our third project for C# course. This site is for a hair salon w
 * Install .NET SDK, .NET Runtime, Git, MAMP, and Mono (refer to links in **Technologies Used** section below).
 * Clone this project to your local system
 * Once MAMP is installed, the port configured, you have clicked on "Start Servers", and the servers show they are running, issue the following command (Windows or MAC) to start mySQL in your terminal based on your configuration:
-  * <span style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE:</span> Your installation directories may be slightly different. If so, adjust the MAMP command for your installation accordingly.
+  * <span style="color: #f2cf4a; font-family: Babas; font-size: 1em;" line-height: 0>NOTE:</span> Your installation directories may be slightly different. If so, adjust the MAMP command for your installation accordingly.
     * Depending if you are on Windows or MAC, go to your CMD, Command line interface, Terminal, PowerShell, or Bash. Issue (or copy/paste) the following to start MAMP. Then at the `mysql>` prompt, issue the subsequent commands for the database aspects for this project:
-<table style="background-color: #000;" style="color:#0000ff;" style="font-size: 20;" border=2 cellspacing=2 cellpadding=4>
+<table style="background-color: #000;" style="color:#0000ff;" border=2 cellspacing=2 cellpadding=2>
   <tr>
     <td bgcolor="#3B9FF;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">Windows</font></td>
     <td bgcolor="#3B9FF;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">MAC</font></td>
@@ -32,8 +32,7 @@ This website is our third project for C# course. This site is for a hair salon w
 </table>
 
 <p><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE:</font> <font style="margin-bottom:0;">Unless you have done otherwise, the cloned project compressed as a .Zip file from GitHub would be uncompressed into the folder "Wk3-C--IP-Salon". Issue the following commands in sequence within your Terminal: </font></p>
-
-<table style="background-color: #000;" style="color:#0000ff;" style="font-size: 20;" border=2 cellspacing=2 cellpadding=2>
+<table style="background-color: #000;" style="color:#0000ff;" border=2 cellspacing=2 cellpadding=2>
   <tr>
     <td colspan="2" style="text-align:center;" bgcolor="#bc01bf;"><font color="#fff" size="3.5">**Choose One Column**<br/></font><font color="#fff" size="2">(__certain__ commands are the same for both columns)</font></td>
   </tr>
