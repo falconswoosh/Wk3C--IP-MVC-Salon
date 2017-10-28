@@ -14,8 +14,13 @@ This website is our third project in the C# course and incorporates MVC and SQL 
 |:---|
 |• You may view this project at: https://falconswoosh.github.io/Wk3C--IP-MVC-Salon<br/>• This project may be cloned from:  https://github.com/falconswoosh/Wk3C--IP-MVC-Salon.git<br/>• Install .NET SDK, .NET Runtime, Git, [MAMP](https://techterms.com/definition/mamp), and Mono (refer to links in **Technologies Used** section below). Once MAMP (which installs [mySQL](https://docs.oracle.com/database/121/SQLRF/toc.htm)) is installed, the port configured, you have clicked on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), and the servers show they [are running](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), continue with the steps below for configuration and finally to interact with this project...|
 
-![Database Schema](https://github.com/falconswoosh/Wk3C--IP-MVC-Salon/blob/master/HairSalon/wwwroot/img/schema.png "This displays the database schema for this project")
-![Database Schema](C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png)
+![Database Schema1](https://github.com/falconswoosh/Wk3C--IP-MVC-Salon/blob/master/HairSalon/wwwroot/img/schema.png "This displays the database schema for this project")
+![Database Schema2](C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png)
+![Database Schema3](C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png)
+
+<img src="C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png" alt="schema1">
+<img src="https://github.com/falconswoosh/Wk3C--IP-MVC-Salon/blob/master/HairSalon/wwwroot/img/schema.png" alt="schema2">
+
 <table style="background-color: #000;" style="color:#0000ff;" border=2 cellspacing=2 cellpadding=2>
   <tr>
     <td colspan="2" bgcolor="white;" style="text-align:center;"><font color=#fff;" font-family: Babas; font-size: 6em;">Launching MAMP and Creating mySQL databases for this project</font></td>
