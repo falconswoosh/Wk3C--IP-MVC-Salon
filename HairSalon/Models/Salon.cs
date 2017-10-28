@@ -7,10 +7,10 @@ namespace Salon.Models
 {
   public class Stylist
   {
-    //stylist info
+    //stylist info Eq
     private string _sLastName;
     private string _sFirstName;
-    private int _sId
+    private int _sId;
 
 
     public Stylist(string sLastName, string sFirstName, int sId = 0)
