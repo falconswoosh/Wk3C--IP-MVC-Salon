@@ -17,9 +17,12 @@ This website is our third project in the C# course and incorporates MVC and SQL 
 ![Database Schema1](https://github.com/falconswoosh/Wk3C--IP-MVC-Salon/blob/master/HairSalon/wwwroot/img/schema.png "This displays the database schema for this project")
 ![Database Schema2](C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png)
 ![Database Schema3](C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png)
+![Database Schema4](/wwwroot/schema.png)
+![Database Schema5](\wwwroot\schema.png)
+![Database Schema6](/img/schema.png)
 
-<img src="C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png" alt="schema1">
-<img src="https://github.com/falconswoosh/Wk3C--IP-MVC-Salon/blob/master/HairSalon/wwwroot/img/schema.png" alt="schema2">
+<img src="C:\Users\F1\Desktop\school\OFFICIAL\HairSalon.Solution\HairSalon\wwwroot\img\schema.png" alt="schema7">
+<img src="https://github.com/falconswoosh/Wk3C--IP-MVC-Salon/blob/master/HairSalon/wwwroot/img/schema.png" alt="schema8">
 
 <table style="background-color: #000;" style="color:#0000ff;" border=2 cellspacing=2 cellpadding=2>
   <tr>
