@@ -1,4 +1,4 @@
-# MVC-Salon
+# [MVC](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)-Salon
 
 #### This is for code Project#3 for C Sharp Course
 
@@ -6,66 +6,67 @@
 
 ## Description
 
-This website is our third project for C# course. This site is for a hair salon where hair stylists have clients assigned them and interaction with this site allow for managing both the clients assigned to a stylist as well as information that may be stored for the client.
+This website is our third project in the C# course and incorporates MVC and SQL concepts. This site is for a hair salon where hair stylists have clients assigned them and interaction with this site allow for managing both the clients assigned to a stylist as well as information that may be stored for the client.
 
 ## Setup/Installation Requirements
 
-* You may view this project at: https://falconswoosh.github.io/Wk3C--IP-MVC-Salon
-* This project may be cloned from:  https://github.com/falconswoosh/Wk3C--IP-MVC-Salon.git
-* Install .NET SDK, .NET Runtime, Git, MAMP, and Mono (refer to links in **Technologies Used** section below).
-* Clone this project to your local system
-* Once MAMP is installed, the port configured, you have clicked on "Start Servers", and the servers show they are running, issue the following command (Windows or MAC) to start mySQL in your terminal based on your configuration:
-  * <span style="color: #f2cf4a; font-family: Babas; font-size: 1em;" line-height: 0>NOTE:</span> Your installation directories may be slightly different. If so, adjust the MAMP command for your installation accordingly.
-    * Depending if you are on Windows or MAC, go to your CMD, Command line interface, Terminal, PowerShell, or Bash. Issue (or copy/paste) the following to start MAMP. Then at the `mysql>` prompt, issue the subsequent commands for the database aspects for this project:
+| Preparation |
+|:---|
+|• You may view this project at: https://falconswoosh.github.io/Wk3C--IP-MVC-Salon<br/>• This project may be cloned from:  https://github.com/falconswoosh/Wk3C--IP-MVC-Salon.git<br/>• Install .NET SDK, .NET Runtime, Git, [MAMP](https://techterms.com/definition/mamp), and Mono (refer to links in **Technologies Used** section below). Once MAMP (which installs [mySQL](https://docs.oracle.com/database/121/SQLRF/toc.htm)) is installed, the port configured, you have clicked on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), and the servers show they [are running](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), continue with the steps below for configuration and finally to interact with this project...|
 <table style="background-color: #000;" style="color:#0000ff;" border=2 cellspacing=2 cellpadding=2>
   <tr>
-    <td bgcolor="#3B9FF;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">Windows</font></td>
-    <td bgcolor="#3B9FF;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">MAC</font></td>
+    <td colspan="2" bgcolor="white;" style="text-align:center;"><font color=#fff;" font-family: Babas; font-size: 6em;">Launching MAMP and Creating mySQL databases for this project</font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">Windows</font></td>
+    <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">MAC</font></td>
   </tr>
   <tr>
     <td>C:\MAMP\bin\mysql\bin -uroot -proot</td>
     <td>/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot</td>
   </tr>  
   <tr>
-    <td colspan="2">`mysql>` CREATE DATABASE alan_falcon;<br/>`mysql>` USE alan_falcon;<br/>`mysql>` CREATE TABLE stylists (sId serial PRIMARY KEY, sLastName VARCHAR(255), sFirstName VARCHAR(255));<br/>`mysql>` CREATE TABLE clients (cId serial PRIMARY KEY,cLastName VARCHAR(255), cFirstName VARCHAR(255));<br/>`If wishing to modify the code`, you may also need to create the test database. If so, repeat the mysql steps above by replacing 'alan_falcon' with 'alan_falcon_test'.</td>    
-  </tr>
-</table>
-
-<p><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE:</font> <font style="margin-bottom:0;">Unless you have done otherwise, the cloned project compressed as a .Zip file from GitHub would be uncompressed into the folder "Wk3-C--IP-Salon". Issue the following commands in sequence within your Terminal: </font></p>
-<table style="background-color: #000;" style="color:#0000ff;" border=2 cellspacing=2 cellpadding=2>
-  <tr>
-    <td colspan="2" style="text-align:center;" bgcolor="#bc01bf;"><font color="#fff" size="3.5">**Choose One Column**<br/></font><font color="#fff" size="2">(__certain__ commands are the same for both columns)</font></td>
+    <td colspan="2">`mysql>` CREATE DATABASE alan_falcon;<br/>`mysql>` USE alan_falcon;<br/>`mysql>` CREATE TABLE stylists (sId serial PRIMARY KEY, sLastName VARCHAR(255), sFirstName VARCHAR(255));<br/>`mysql>` CREATE TABLE clients (cId serial PRIMARY KEY,cLastName VARCHAR(255), cFirstName VARCHAR(255));<br/>`If wishing to modify the code`, you may also need to create the test database to verify changes don't negatively affect the project. If so, repeat the mysql steps above by replacing 'alan_falcon' with 'alan_falcon_test'. This will effectively create a clone of the main database structure for testing purposes allowing you to interact with the test database exclusively.<br/>&nbsp;&nbsp;&nbsp;&nbsp;• An alternative to interfacing with mySQL is with the use of myphpAdmin that is GUI-based. [MyPhPAdmin](https://i.ytimg.com/vi/EwuL2WaPXXM/maxresdefault.jpg) is launched from within the [MAMP application](https://documentation-3.mamp.info/img/en/MAMP/windows/MainView.jpg?id=167), which brings up the MAMP <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;website, where you may [launch myphpAdmin](https://forums.macrumors.com/attachments/screen-shot-2017-02-22-at-1-53-47-pm-png.689731/). Click [here](https://docs.phpmyadmin.net/en/latest/) for further information on myphpAdmin.</td>
   </tr>
   <tr>
-    <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the UI Database` <br/> (default usage)</font></td>
-    <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the Test Database` <br/> (if you are modifying or testing the backend) </font></td>
+    <td colspan="2" style="text-align:center;" bgcolor="red"><font color="#000" size="3.5">**Choose One Column Below**<br/></font><font color="#fff" size="2">(__certain__ commands are the same for both columns)</font></td>
+  </tr>
+  <tr>
+  <td colspan="2" style="text-align:center;" bgcolor=";"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE: </font>Unless you have done otherwise, the cloned project compressed as a .Zip file from GitHub would be uncompressed into the folder "Wk3-C--IP-Salon". Issue the following commands in sequence within your Terminal:</td>
+  </tr>  
+  <tr>
+  <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the UI Database` <br/> (default usage)</font></td>
+  <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the Test Database` <br/> (if you are modifying or testing the backend) </font></td>
+  </tr>
   </tr>
   <tr>  
-    <td colspan="2" style="text-align:center;">cd Wk3-C--IP-Salon</td>
+  <td colspan="2" style="text-align:center;">cd Wk3-C--IP-Salon</td>
   </tr>
   <tr>  
-    <td colspan="2" style="text-align:center;">cd HairSalon.Solution</td>   
+  <td colspan="2" style="text-align:center;">cd HairSalon.Solution</td>   
   </tr>
   <tr>  
-    <td style="text-align:center;">cd HairSalon</td>
-    <td style="text-align:center;">cd HairSalon.Tests</td>    
+  <td style="text-align:center;">cd HairSalon</td>
+  <td style="text-align:center;">cd HairSalon.Tests</td>    
   </tr>
   <tr>  
-    <td colspan="2" style="text-align:center;">dotnet restore <br/>dotnet build<br/>dotnet run</td>      
+  <td colspan="2" style="text-align:center;">[dotnet restore](https://bertt.files.wordpress.com/2016/09/image8.png) <br/>[dotnet build](https://offering.solutions/blog/assets/articles/wp-content/uploads/2016/11/BuildaWebAPIwithVSCodeandtheDotNetCLI_04.jpg)</td>      
+  </tr>
+  <td style="text-align:center;">[dotnet run](https://social.technet.microsoft.com/wiki/cfs-filesystemfile.ashx/__key/communityserver-wikis-components-files/00-00-00-00-05/5722.ASP.NET-Core-HelloWorld5.png)</td>      
+  <td style="text-align:center;">[dotnet test](http://developers.de/cfs-filesystemfile.ashx/__key/CommunityServer.Blogs.Components.WeblogFiles/damir_5F00_dobric/image_5F00_0CCC2E6F.png)</td>    
   </tr>
   <tr>  
-    <td>Open a browser and navigate to http://localhost:5000 to interact with this project as a user.</td>     
-    <td>Interaction is within the Terminal view</td>  
+  <td>Open a browser and navigate to http://localhost:5000 to interact with this project as a user.</td>     
+  <td>Interaction is mainly within the Terminal view and using your preferred editor to modify code to  <br/>address errors that either exist or introduced as part of your interaction with this project.</td>  
   </tr>  
   <tr>  
-    <td colspan="2" style="text-align:center;"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">(**NOTE**: When done, `CTRL-C` to stop the server as well as `in MAMP` click on **Stop Servers**.)</font></td>   
-  </tr>        
+  <td colspan="2" style="text-align:center;"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">(**NOTE**: When done, [CTRL-C](http://sheepdogguides.com/srv/gra/msqclc1.png) to stop the server within Terminal as well as `in MAMP` click on [Stop Servers](https://www.mamp.info/en/images/screenshots/en_mamp-start.jpg).)</font></td>   
+  </tr>
+  <td colspan="2" style="text-align:center;"><font style="color: #fff; font-family: Babas; font-size: 1em;">**Further Exploration**:<br/></font> If not already and if you choose to, you may use your editor-of-choice to edit and modify this project.<br/>• For example, if your editor is [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/), issue the following in your bash if wishing to edit the Index.cshtml file from within the ...Views/Home directory for this project:
+    $ [Atom Index.cshtml](http://127.0.0.1)</td>
+  </tr>              
 </table>
 
-
-* If you choose, you may use your editor-of-choice to edit and modify this project.
-  * For example, if your editor is [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/), issue the following in your bash if wishing to edit the Index.cshtml file from within the ...Views/Home directory for this project:
-    $ Atom Index.cshtml
 ---
 
 ## Specifications    
@@ -104,12 +105,13 @@ Alan Falcon email: [falconswoosh@gmail.com](falconswoosh@gmail.com)
 | CSS: Materialize <td colspan=2> http://materializecss.com/forms.html  </td>|
 | Git | https://git-for-windows.github.io/ | [Paste the following into Bash]:<br />$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"<br />$ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile<br />$ brew install git |
 | GitHub:<td colspan=2> https://github.com/  </td>|
+| Google Chrome browser:<td colspan=2> https://www.google.com/chrome/browser/desktop/index.html <br/>  Once installed and when using Google Chrome, Ctrl-Shift-I to bring up Developer Mode as a troubleshooting tool. </td>|
 | HTML:<td colspan=2> http://htmlreference.io  </td>|
 | Javascript:<td colspan=2> https://www.javascript.com/  </td>|
 | Javascript Jquery<td colspan=2> [Link too long (hover here to view link detail or right-click to copy HTML)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiBj_WJlbnWAhWBLhQKHfHUAQEQFggmMAA&url=https%3A%2F%2Fjquery.com%2F&usg=AFQjCNFnz7C6MAXGLm7pVcOD_LrOjJUUiA/ "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiBj_WJlbnWAhWBLhQKHfHUAQEQFggmMAA&url=https%3A%2F%2Fjquery.com%2F&usg=AFQjCNFnz7C6MAXGLm7pVcOD_LrOjJUUiA") </td> |
-| MAMP (contains Apache server, MySQL, phpMyAdmin, etc.)<td colspan=2> https://en.wikipedia.org/wiki/Markdown<br>• Select either Windows or MAC<br/>• Once installed, click on 'Preferences' &#124; click on "Set Web & MySQL ports to 80 & 3306". &#124; Click on "Start Servers"...when the servers are up, the "button" toggles to "Stop Servers"<br/>&nbsp;&nbsp;**WARNING:**&nbsp; Otherwise, for the port - you may choose to identify certain ports yourself based on your system configuration. If doing this however, every line in the code referring to port `3306` will need to be modified with the port you specify for mySQL.  </td>|
+| MAMP (contains Apache server, [MySQL](http://www.sqlcommands.net/), [phpMyAdmin](https://www.siteground.com/tutorials/phpmyadmin/database-management/), etc.)<td colspan=2> https://en.wikipedia.org/wiki/Markdown<br>• Select either Windows or MAC<br/>• Once installed, click on [Preferences](https://img.webnots.com/2014/11/MAMP-Preferences-Settings.png) &#124; click on [Set Web & MySQL ports to 80 & 3306](https://www.pcdailytips.com/wp-content/uploads/2017/01/ports-setweb-mysql.png). &#124; Click on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png)...when the servers are up, the "button" toggles to "Stop Servers"<br/>&nbsp;&nbsp;**WARNING:**&nbsp; Otherwise, for the port - you may choose to identify certain ports yourself based on your system configuration (e.g., in class it may be ports 8888/8889). If doing this however, every line in the code referring to port `3306` will need to be modified with the port you specify for mySQL. Stated another way, the code in this project uses port 80 for the Apache server and port 3306 for the mySQL server.  </td>|
 | Markdown<td colspan=2> https://www.mamp.info/en/downloads/  </td>|
-| Mono |http://www.mono-project.com/download/#download-win | http://www.mono-project.com/download/#download-mac |
+| Mono (Note: contains CSharp. Launch by typing [csharp](https://itech.folderit.net/wp-content/uploads/2014/06/csharp.png) within the Mono prompt. csharp is included and is a [REPL](http://www.mono-project.com/docs/tools+libraries/tools/repl/) for [testing C# commands](http://lh4.ggpht.com/__Mw4iY-4nuY/TJ8yMvRqQ9I/AAAAAAAAA7I/8_Jy51UGFkI/image_thumb%5B48%5D.png?imgmax=800)) |http://www.mono-project.com/download/#download-win | http://www.mono-project.com/download/#download-mac |
 
 
 ### License
