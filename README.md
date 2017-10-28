@@ -1,6 +1,6 @@
 # [MVC](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)-Salon
 
-#### This is for code Project#3 for C Sharp Course
+#### This is for code Project#3 for the C Sharp Course
 
 #### By **Alan Falcon**
 
@@ -13,6 +13,7 @@ This website is our third project in the C# course and incorporates MVC and SQL 
 | Preparation |
 |:---|
 |• You may view this project at: https://falconswoosh.github.io/Wk3C--IP-MVC-Salon<br/>• This project may be cloned from:  https://github.com/falconswoosh/Wk3C--IP-MVC-Salon.git<br/>• Install .NET SDK, .NET Runtime, Git, [MAMP](https://techterms.com/definition/mamp), and Mono (refer to links in **Technologies Used** section below). Once MAMP (which installs [mySQL](https://docs.oracle.com/database/121/SQLRF/toc.htm)) is installed, the port configured, you have clicked on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), and the servers show they [are running](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), continue with the steps below for configuration and finally to interact with this project...|
+![alt text](https://github.com/falconswoosh/Wk3C--IP-MVC-Salon/tree/master/Salon/wwwroot/img/schema.jpg "Database Schema")
 <table style="background-color: #000;" style="color:#0000ff;" border=2 cellspacing=2 cellpadding=2>
   <tr>
     <td colspan="2" bgcolor="white;" style="text-align:center;"><font color=#fff;" font-family: Babas; font-size: 6em;">Launching MAMP and Creating mySQL databases for this project</font></td>
@@ -32,7 +33,7 @@ This website is our third project in the C# course and incorporates MVC and SQL 
     <td colspan="2" style="text-align:center;" bgcolor="red"><font color="#000" size="3.5">**Choose One Column Below**<br/></font><font color="#fff" size="2">(__certain__ commands are the same for both columns)</font></td>
   </tr>
   <tr>
-  <td colspan="2" style="text-align:center;" bgcolor=";"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE: </font>Unless you have done otherwise, the cloned project compressed as a .Zip file from GitHub would be uncompressed into the folder "Wk3-C--IP-Salon". Issue the following commands in sequence within your Terminal:</td>
+  <td colspan="2" style="text-align:center;" bgcolor=";"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE: </font>Unless you have done otherwise, the cloned project compressed as a .Zip file from GitHub would be uncompressed into the folder "Wk3-C--IP-Salon". <font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">Issue the following commands in sequence within your Terminal:</bont></td>
   </tr>  
   <tr>
   <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the UI Database` <br/> (default usage)</font></td>
@@ -97,24 +98,26 @@ Alan Falcon email: [falconswoosh@gmail.com](falconswoosh@gmail.com)
 ## Technologies Used
 
 | Technology | Windows | MAC |
-|---|---|---|
+|---|:---|:---|
 | C# .NET Core 1.1 SDK (Software Development Kit) |  [Link too long (hover here to view link detail or right-click to copy HTML)](https://download.microsoft.com/download/F/4/F/F4FCB6EC-5F05-4DF8-822C-FF013DF1B17F/dotnet-dev-win-x64.1.1.4.exe/ "https://download.microsoft.com/download/F/4/F/F4FCB6EC-5F05-4DF8-822C-FF013DF1B17F/dotnet-dev-win-x64.1.1.4.exe") | [Link too long (hover here to view link detail or right-click to copy HTML)](https://download.microsoft.com/download/F/4/F/F4FCB6EC-5F05-4DF8-822C-FF013DF1B17F/dotnet-dev-osx-x64.1.1.4.pkg/ "https://download.microsoft.com/download/F/4/F/F4FCB6EC-5F05-4DF8-822C-FF013DF1B17F/dotnet-dev-osx-x64.1.1.4.pkg") |
 | .NET Runtime |[Link too long (hover here to view link detail or right-click to copy HTML)](https://download.microsoft.com/download/6/F/B/6FB4F9D2-699B-4A40-A674-B7FF41E0E4D2/dotnet-win-x64.1.1.4.exe/ "https://download.microsoft.com/download/6/F/B/6FB4F9D2-699B-4A40-A674-B7FF41E0E4D2/dotnet-win-x64.1.1.4.exe") | [Link too long (hover here to view link detail or right-click to copy HTML)](https://download.microsoft.com/download/6/F/B/6FB4F9D2-699B-4A40-A674-B7FF41E0E4D2/dotnet-osx-x64.1.1.4.pkg/ "https://download.microsoft.com/download/6/F/B/6FB4F9D2-699B-4A40-A674-B7FF41E0E4D2/dotnet-osx-x64.1.1.4.pkg") |
 | Atom | http://flight-manual.atom.io/getting-started/sections/why-atom/ | https://github.com/atom/atom/releases/download/v1.21.1/atom-mac.zip |
 | CSS <td colspan=2>[Link too long (hover here to view link detail or right-click to copy HTML)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjswubPlLnWAhVGVRQKHaRLBkgQFggmMAA&url=https%3A%2F%2Fgetbootstrap.com%2Fcss%2F&usg=AFQjCNFpcAPIPLCu0F7w2NDTOafHdV8Pkw/ "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjswubPlLnWAhVGVRQKHaRLBkgQFggmMAA&url=https%3A%2F%2Fgetbootstrap.com%2Fcss%2F&usg=AFQjCNFpcAPIPLCu0F7w2NDTOafHdV8Pkw")  </td>|
-| CSS: Materialize <td colspan=2> http://materializecss.com/forms.html  </td>|
+| CSS Materialize <td colspan=2> http://materializecss.com/forms.html  </td>|
 | Git | https://git-for-windows.github.io/ | [Paste the following into Bash]:<br />$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"<br />$ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile<br />$ brew install git |
-| GitHub:<td colspan=2> https://github.com/  </td>|
+| GitHub<td colspan=2> https://github.com/  </td>|
 | Google Chrome browser:<td colspan=2> https://www.google.com/chrome/browser/desktop/index.html <br/>  Once installed and when using Google Chrome, Ctrl-Shift-I to bring up Developer Mode as a troubleshooting tool. </td>|
-| HTML:<td colspan=2> http://htmlreference.io  </td>|
-| Javascript:<td colspan=2> https://www.javascript.com/  </td>|
+| HTML<td colspan=2> http://htmlreference.io  </td>|
+| Javascript<td colspan=2> https://www.javascript.com/  </td>|
 | Javascript Jquery<td colspan=2> [Link too long (hover here to view link detail or right-click to copy HTML)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiBj_WJlbnWAhWBLhQKHfHUAQEQFggmMAA&url=https%3A%2F%2Fjquery.com%2F&usg=AFQjCNFnz7C6MAXGLm7pVcOD_LrOjJUUiA/ "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiBj_WJlbnWAhWBLhQKHfHUAQEQFggmMAA&url=https%3A%2F%2Fjquery.com%2F&usg=AFQjCNFnz7C6MAXGLm7pVcOD_LrOjJUUiA") </td> |
 | MAMP (contains Apache server, [MySQL](http://www.sqlcommands.net/), [phpMyAdmin](https://www.siteground.com/tutorials/phpmyadmin/database-management/), etc.)<td colspan=2> https://en.wikipedia.org/wiki/Markdown<br>• Select either Windows or MAC<br/>• Once installed, click on [Preferences](https://img.webnots.com/2014/11/MAMP-Preferences-Settings.png) &#124; click on [Set Web & MySQL ports to 80 & 3306](https://www.pcdailytips.com/wp-content/uploads/2017/01/ports-setweb-mysql.png). &#124; Click on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png)...when the servers are up, the "button" toggles to "Stop Servers"<br/>&nbsp;&nbsp;**WARNING:**&nbsp; Otherwise, for the port - you may choose to identify certain ports yourself based on your system configuration (e.g., in class it may be ports 8888/8889). If doing this however, every line in the code referring to port `3306` will need to be modified with the port you specify for mySQL. Stated another way, the code in this project uses port 80 for the Apache server and port 3306 for the mySQL server.  </td>|
 | Markdown<td colspan=2> https://www.mamp.info/en/downloads/  </td>|
 | Mono (Note: contains CSharp. Launch by typing [csharp](https://itech.folderit.net/wp-content/uploads/2014/06/csharp.png) within the Mono prompt. csharp is included and is a [REPL](http://www.mono-project.com/docs/tools+libraries/tools/repl/) for [testing C# commands](http://lh4.ggpht.com/__Mw4iY-4nuY/TJ8yMvRqQ9I/AAAAAAAAA7I/8_Jy51UGFkI/image_thumb%5B48%5D.png?imgmax=800)) |http://www.mono-project.com/download/#download-win | http://www.mono-project.com/download/#download-mac |
+| SQL Designer<td colspan=2> https://ondras.zarovi.cz/old/sqlold/demo/  </td>|
+
 
 
 ### License
 * All rights reserved for technologies utilized.
 
-Copyright (c) 2016 **_{MIT}_**
+Copyright (c) 2017 **_{MIT}_**
