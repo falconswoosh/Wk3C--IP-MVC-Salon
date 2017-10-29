@@ -1,6 +1,8 @@
 # [MVC](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)-Salon
 
-#### This is for code Project#3 for the C Sharp Course
+#### **[WARNING]** Some aspects of this README.md file are only viewable when rendering in your editor-of-choice and may not display properly if viewed via GitHub.
+
+#### This is code for Project#3 of the C Sharp Course
 
 #### By **Alan Falcon**
 
@@ -66,7 +68,8 @@ This website is our third project in the C# course and incorporates MVC and SQL 
   <tr>  
   <td colspan="2" style="text-align:center;"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">(**NOTE**: When done, [CTRL-C](http://sheepdogguides.com/srv/gra/msqclc1.png) to stop the server within Terminal as well as `in MAMP` click on [Stop Servers](https://www.mamp.info/en/images/screenshots/en_mamp-start.jpg).)</font></td>   
   </tr>
-  <td colspan="2" style="text-align:center;"><font style="color: #fff; font-family: Babas; font-size: 1em;">**Further Exploration**:<br/></font> If not already and if you choose to, you may use your editor-of-choice to edit and modify this project.<br/>• For example, if your editor is [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/), issue the following in your bash if wishing to edit the Index.cshtml file from within the ...Views/Home directory for this project:
+  <td></td>
+  <td colspan="2" style="text-align:left;"><font style="color: #fff; font-family: Babas; font-size: 1em;">**Further Exploration**:<br/></font> If not already and if you choose to, you may use your editor-of-choice to edit and modify this project.<br/>• For example, if your editor is [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/), issue the following in your bash if wishing to edit the Index.cshtml<br/> file from within the ...Views/Home directory for this project:
     $ [Atom Index.cshtml](http://127.0.0.1)</td>
   </tr>              
 </table>
