@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using Salon.Controllers;
-using Salon.Models;
+using HairSalon.Controllers;
+using HairSalon.Models;
 
-namespace Salon.Tests
+namespace HairSalon.Tests
 {
     [TestClass]
     public class HomeControllerTests
@@ -15,7 +15,7 @@ namespace Salon.Tests
           HomeController controller = new HomeController();
           IActionResult indexView = controller.Index();
           ViewResult result = indexView as ViewResult;
-          Assert.IsInsctanceOfType(result, typeof(ViewResult));
+          Assert.IsInstanceOfType(result, typeof(ViewResult));
         }
     }
 }
