@@ -44,7 +44,7 @@ namespace HairSalon.Models.Tests
             Stylist.ClearAll();
             List<Stylist> resultList = Stylist.GetAll();
 
-            Assert.AreEqual(false,resultList.Count==0);                
+            Assert.AreEqual(true,resultList.Count==0);                
         }
 
     }
