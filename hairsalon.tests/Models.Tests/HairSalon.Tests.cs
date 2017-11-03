@@ -27,8 +27,25 @@ namespace HairSalon.Models.Tests
 
             Assert.AreEqual(true,Stylist.GetAll().Count==1);
         }
-        // [TestMethod]
-        // public void GetAll_GetAllStylists_0()
+        [TestMethod]
+        public void ClearAll_ClearAllStylistsFromDatabase_0()
+        {
+            List<Stylist> testList = new List<Stylist>();
+            Stylist stylistA = new Stylist("Farron", "Alan");
+            Stylist stylistB = new Stylist("Murphy", "Brenda");
+            Stylist stylistC = new Stylist("Zamera", "Charlie");
+            testList.Add(stylistA);
+            testList.Add(stylistB);
+            testList.Add(stylistC);
+            stylistA.Save();
+            stylistB.Save();
+            stylistC.Save();
+
+            Stylist.ClearAll();
+            List<Stylist> resultList = Stylist.GetAll();
+
+            Assert.AreEqual(false,resultList.Count==0);                
+        }
 
     }
   }
