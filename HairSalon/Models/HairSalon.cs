@@ -3,41 +3,41 @@ using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace Salon.Models
+namespace HairSalon.Models
 {
   public class Stylist
   {
     //stylist info Eq
-    private string sLastName {get; private set;}
-    private string sFirstName {get; private set;}
-    private int sId {get; private set;}
+    public string LastName {get; private set;}
+    public string FirstName {get; private set;}
+    public int Id {get; private set;}
 
 
-    public Stylist(string sLastName, string sFirstName, int sId = 0)
+    public Stylist(string lastname, string firstname, int id = 0)
     {
-        sLastName = slastname;
-        sFirstName = sfirstname;
-        sId = sid;
+        LastName = lastname;
+        FirstName = firstname;
+        Id = id;
     }
 
-    public override bool Equals(System.Object OtherStylist)
+    public override bool Equals(System.Object otherStylist)
     {
-      if (!(OtherStylist is Stylist))
+      if (!(otherStylist is Stylist))
       {
         return false;
       }
       else
       {
-        Stylist newSalon = (Stylist) otherStylist;
-        bool idEquality = (this.GetSId == newStylist.GetSId);
-        bool slastnameEquality = (this.GetsLastName == newStylist.GetsLastName);
-        bool sfirstnameEquality = (this.GetsFirstName == newStylist.GetsFirstName;
-        return (sidEquality && slastnameEquality && sfirstnameEquality);
+        Stylist newStylist = (Stylist) otherStylist;
+        bool idEquality = (this.Id == newStylist.Id);
+        bool lastnameEquality = (this.LastName == newStylist.LastName);
+        bool firstnameEquality = (this.FirstName == newStylist.FirstName);
+        return (idEquality && lastnameEquality && firstnameEquality);
       }
     }
     public override int GetHashCode()
     {
-        return this.sId.GetHashCode();
+        return this.Id.GetHashCode();
     }
 
 //ADD:  ClientID here
@@ -48,20 +48,21 @@ namespace Salon.Models
         conn.Open();
 
         var cmd = conn.CreateCommand() as MySqlCommand;
-        cmd.CommandText = @"INSERT INTO stylists (slastname, sfirstname) VALUES (@slastname, @sfirstname);";
+        cmd.CommandText = @"INSERT INTO stylists (lastname, firstname) VALUES (@lastname, @firstname);";
 
-        MySqlParameter slastname = new MySqlParameter();
-        slastname.ParameterName = "@slastname";
-        slastname.Value = this.sLastName;
-        cmd.Parameters.Add(slastname);
+        MySqlParameter lastname = new MySqlParameter();
+        lastname.ParameterName = "@lastname";
+        lastname.Value = this.LastName;
+        cmd.Parameters.Add(lastname);
 
-        MySqlParameter sfirstname = new MySqlParameter();
-        sfirstname.ParameterName = "@sfirstname";
-        sfirstname.Value = sFirstName;
-        cmd.Parameters.Add(sfirstname);
+        MySqlParameter firstname = new MySqlParameter();
+        firstname.ParameterName = "@firstname";
+        firstname.Value = FirstName;
+        cmd.Parameters.Add(firstname);
 
         cmd.ExecuteNonQuery();
-        sId = (int) cmd.LastInsertedsId;
+        Id = (int) cmd.LastInsertedId;
+
         conn.Close();
         if (conn != null)
         {
@@ -163,28 +164,28 @@ namespace Salon.Models
       return errorStylist;
     }
 
-    public void Update(string slastname="", string sfirstname="")
+    public void Update(string lastname="", string firstname="")
     {
-      if(!String.IsNullOrEmpty(slastname))
-      {this.sLastName = slastname;}
-      if(!String.IsNullOrEmpty(sfirstname))
-      {this.sFirstName = sfirstname;}
+      if(!String.IsNullOrEmpty(lastname))
+      {this.LastName = lastname;}
+      if(!String.IsNullOrEmpty(firstname))
+      {this.FirstName = firstname;}
 
       MySqlConnection conn = DB.Connection();
       conn.Open();
 
       MySqlCommand cmd = conn.CreateCommand();
-      cmd.CommandText = @"SET @slastname, @sfirstname FROM stylists WHERE id = @thisId;";
+      cmd.CommandText = @"SET @lastname, @firstname FROM stylists WHERE id = @thisId;";
 
-      MySqlParameter thisLastName = new MySqlParameter();
-      thisLastName.ParameterName = "@slastname";
-      thisLastName.Value = this.sLastName;
-      cmd.Parameters.Add(thisLastName);
+      MySqlParameter thislastname = new MySqlParameter();
+      thislastname.ParameterName = "@lastname";
+      thislastname.Value = this.LastName;
+      cmd.Parameters.Add(thislastname);
 
-      MySqlParameter thisFirstName = new MySqlParameter();
-      thisFirstName.ParameterName = "@sfirstname";
-      thisFirstName.Value = this.sFirstName;
-      cmd.Parameters.Add(thisFirstName);
+      MySqlParameter thisfirstname = new MySqlParameter();
+      thisfirstname.ParameterName = "@firstname";
+      thisfirstname.Value = this.FirstName;
+      cmd.Parameters.Add(thisfirstname);
 
         conn.Close();
         if (conn != null)

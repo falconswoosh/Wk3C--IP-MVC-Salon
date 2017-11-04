@@ -1,6 +1,6 @@
-# [MVC](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)-Salon
+# [MVC](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)-HairSalon
 
-#### **[WARNING]** Some aspects of this README.md file are only viewable when rendering in your editor-of-choice and may not display properly if viewed via GitHub.
+## **`[WARNING]:`** **`Some aspects of this README.md file are only viewable when rendering this Markdown file in your editor-of-choice and may not display properly if viewed via GitHub.`**
 
 #### This is code for Project#3 of the C Sharp Course
 
@@ -14,7 +14,7 @@ This website is our third project in the C# course and incorporates MVC and SQL 
 
 | Preparation |
 |:---|
-|• You may view this project at: https://falconswoosh.github.io/Wk3C--IP-MVC-Salon<br/>• This project may be cloned from:  https://github.com/falconswoosh/Wk3C--IP-MVC-Salon.git<br/>• Install .NET SDK, .NET Runtime, Git, [MAMP](https://techterms.com/definition/mamp), and Mono (refer to links in **Technologies Used** section below). Once MAMP (which installs [mySQL](https://docs.oracle.com/database/121/SQLRF/toc.htm)) is installed, the port configured, you have clicked on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), and the servers show they [are running](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), continue with the steps below for configuration and finally to interact with this project...|
+|• You may view this project at: https://falconswoosh.github.io/Wk3C--IP-MVC-Salon<br/>• This project may be cloned or downloaded as a .ZIP file from:  https://github.com/falconswoosh/Wk3C--IP-MVC-Salon.git<br/>• Install .NET SDK, .NET Runtime, Git, [MAMP](https://techterms.com/definition/mamp), and Mono (refer to links in **Technologies Used** section below). Once MAMP (which installs [mySQL](https://docs.oracle.com/database/121/SQLRF/toc.htm)) is installed, the port configured, you have clicked on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), and the servers show they [are running](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png), continue with the steps below for configuration and finally to interact with this project...|
 
 | Database schema for this project: |
 |:---:|
@@ -38,11 +38,11 @@ This website is our third project in the C# course and incorporates MVC and SQL 
     <td colspan="2" style="text-align:center;" bgcolor="red"><font color="#000" size="3.5">**Choose One Column Below**<br/></font><font color="#fff" size="2">(__certain__ commands are the same for both columns)</font></td>
   </tr>
   <tr>
-  <td colspan="2" style="text-align:center;" bgcolor=";"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE: </font>Unless you have done otherwise, the cloned project compressed as a .Zip file from GitHub would be uncompressed into the folder "Wk3-C--IP-Salon". <font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">Issue the following commands in sequence within your Terminal:</bont></td>
+  <td colspan="2" style="text-align:center;" bgcolor=";"><font style="color: #f2cf4a; font-family: Babas; font-size: 1em;">NOTE: </font>Unless you have done otherwise, this downloade project compressed as a .Zip file from GitHub would be uncompressed into the folder "Wk3-C--IP-Salon". <font style="color: #f2cf4a; font-family: Babas; font-size: 1em;"><br/>Issue the following commands in sequence within your Terminal:</bont></td>
   </tr>  
   <tr>
   <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the UI Database` <br/> (default usage)</font></td>
-  <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the Test Database` <br/> (if you are modifying or testing the backend) </font></td>
+  <td bgcolor="#3B9FF;" style="text-align:center;"><font color=#ffff00;" font-family: Babas; font-size: 4em;">`Interact with the Test Database` </font><br/> <font color=#ffff00;" font-family: Babas; font-size: 4em;">•••If you are modifying or testing the backend, then issue commands in both columns starting with the UI first. However, for the UI, skip "dotnet run" and "...//localhost..")</font></td>
   </tr>
   </tr>
   <tr>  
@@ -119,7 +119,7 @@ Alan Falcon email: [falconswoosh@gmail.com](falconswoosh@gmail.com)
 | MAMP (contains Apache server, [MySQL](http://www.sqlcommands.net/), [phpMyAdmin](https://www.siteground.com/tutorials/phpmyadmin/database-management/), etc.)<td colspan=2> https://en.wikipedia.org/wiki/Markdown<br>• Select either Windows or MAC<br/>• Once installed, click on [Preferences](https://img.webnots.com/2014/11/MAMP-Preferences-Settings.png) &#124; click on [Set Web & MySQL ports to 80 & 3306](https://www.pcdailytips.com/wp-content/uploads/2017/01/ports-setweb-mysql.png). &#124; Click on [Start Servers](https://img.webnots.com/2014/10/MAMP-Apache-Server-Not-Started-with-Mac-Yosemite.png)...when the servers are up, the "button" toggles to "Stop Servers"<br/>&nbsp;&nbsp;**WARNING:**&nbsp; Otherwise, for the port - you may choose to identify certain ports yourself based on your system configuration (e.g., in class it may be ports 8888/8889). If doing this however, every line in the code referring to port `3306` will need to be modified with the port you specify for mySQL. Stated another way, the code in this project uses port 80 for the Apache server and port 3306 for the mySQL server.  </td>|
 | Markdown<td colspan=2> https://www.mamp.info/en/downloads/  </td>|
 | Mono (Note: contains CSharp. Launch by typing [csharp](https://itech.folderit.net/wp-content/uploads/2014/06/csharp.png) within the Mono prompt. csharp is included and is a [REPL](http://www.mono-project.com/docs/tools+libraries/tools/repl/) for [testing C# commands](http://lh4.ggpht.com/__Mw4iY-4nuY/TJ8yMvRqQ9I/AAAAAAAAA7I/8_Jy51UGFkI/image_thumb%5B48%5D.png?imgmax=800)) |http://www.mono-project.com/download/#download-win | http://www.mono-project.com/download/#download-mac |
-| SQL Designer<td colspan=2> https://ondras.zarovi.cz/old/sqlold/demo/  </td>|
+| SQL Designer<td colspan=2> (Try one of these in this order. I found the second one worked in my Windows 10 configuration via Google Chrome.) http://ondras.zarovi.cz/sql/demo/<br/>https://ondras.zarovi.cz/old/sqlold/demo/  </td>|
 
 
 
