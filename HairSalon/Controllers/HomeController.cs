@@ -13,12 +13,6 @@ namespace HairSalon.Controllers
         List<Stylist> allStylists = Stylist.GetAll();
         return View(allStylists);
       }
-    //   [HttpGet("/stylist/view")]
-    //   public ActionResult ViewStylist()
-    //   {
-    //     List<Stylist> allStylists = Stylist.GetAll();
-    //     return View(allStylists);
-    //   }
       [HttpGet("/stylist/new")]
       public ActionResult AddStylist()
       {
@@ -43,6 +37,24 @@ namespace HairSalon.Controllers
       {
         Stylist.ClearAll();
         return Redirect("/");
+      }
+      [HttpGet("/client/new")]
+      public ActionResult AddClient()
+      {
+        return View();
+      }
+      [HttpPost("/client")]
+      public ActionResult NewClient()
+      {
+        Client newClient = new Client(Request.Form["lastname"], Request.Form["firstname"], Request.Form["stylist_id"]);
+        newClient.Save();
+        return Redirect("/");
+      }
+      [HttpGet("/client")]
+      public ActionResult ViewClient()
+      {
+        List<Client> allClients = Client.GetAll();
+        return View();
       }
     }
 }

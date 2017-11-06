@@ -12,7 +12,6 @@ namespace HairSalon.Models
     public string FirstName {get; private set;}
     public int Id {get; private set;}
 
-
     public Client(string lastname, string firstname, int id = 0)
     {
         LastName = lastname;
@@ -71,7 +70,7 @@ namespace HairSalon.Models
     }
     public static List<Client> GetAll()
     {
-      List<Client> aClient = new List<Client>();
+      List<Client> allClient = new List<Client>();
 
       MySqlConnection conn = DB.Connection();
       conn.Open();
@@ -84,14 +83,14 @@ namespace HairSalon.Models
         string LastName = rdr.GetString(1);
         string FirstName = rdr.GetString(2);
         Client newClient = new Client(LastName, FirstName, Id);
-        aClient.Add(newClient);
+        allClient.Add(newClient);
       }
       conn.Close();
       if(conn != null)
       {
         conn.Dispose();
       }
-      return aClient;
+      return allClient;
     }
     public static void ClearAll()
     {

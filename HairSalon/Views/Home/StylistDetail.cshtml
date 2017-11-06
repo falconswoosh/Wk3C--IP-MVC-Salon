@@ -3,5 +3,21 @@
 }
 <h1>Stylist Details</h1>
 
-  <h3>Last Name: @Model.LastName</h3>
-  <h3>First Name: @Model.FirstName</h3>
+<div class="stylistDetails">
+  <h5>[Stylist (ID)/Name]: (@Model.Id) / @Model.LastName, @Model.FirstName</h5>
+
+  <div class="addClient" style="width: 50%; float:left;">
+    <br><br><br>
+    <h1>Add A Client to this Stylist</h1>
+    <form id="newClient" action="/client" method="post">
+      <label for="lastname">Enter Last Name</label>
+      <input type="text" name="lastname" id="lastname">
+      <label for="firstname">Enter First Name</label>
+      <input type="text" name="firstname" id="firstname">
+      <input type="hidden" name="stylist_id" id="stylist_id" value = @Model.Id>
+      <button class="button" type="submit" name="button">Add</button>
+    </form>
+  </div>
+
+</div>
+  <a href="/client">View Current Clients for this Stylist</a>

@@ -1,0 +1,19 @@
+@{Layout = "_Layout";}
+<h1 id="category">Client List For this Stylist</h1>
+<br>
+@{
+if (Model != null)
+{
+  <ul>
+  @foreach (var client in Model)
+  {
+  <li class="clientsOut"><a href="/client/@stylist_Id">@Model["client"].LastName, @Model["client"].FirstName</a></li>
+  }
+
+  </ul>
+}
+else if (Model == null)
+{
+<p> There are no clients for this stylist.</p>
+}
+}
