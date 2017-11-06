@@ -7,7 +7,7 @@ namespace HairSalon.Models
 {
   public class Stylist
   {
-    //stylist info Eq
+
     public string LastName {get; private set;}
     public string FirstName {get; private set;}
     public int Id {get; private set;}
@@ -71,27 +71,29 @@ namespace HairSalon.Models
     }
     public static List<Stylist> GetAll()
     {
-      List<Stylist> aStylist = new List<Stylist>();
+      List<Stylist> allStylists = new List<Stylist> {};
 
       MySqlConnection conn = DB.Connection();
       conn.Open();
-      MySqlCommand cmd = conn.CreateCommand();
+      var cmd = conn.CreateCommand() as MySqlCommand;
       cmd.CommandText = @"SELECT * FROM stylists;";
-      MySqlDataReader rdr = cmd.ExecuteReader();
+      var rdr = cmd.ExecuteReader() as MySqlDataReader;
       while(rdr.Read())
       {
         int stylistId = rdr.GetInt32(0);
         string stylistLastName = rdr.GetString(1);
         string stylistFirstName = rdr.GetString(2);
         Stylist newStylist = new Stylist(stylistLastName, stylistFirstName, stylistId);
-        aStylist.Add(newStylist);
+        allStylists.Add(newStylist);
       }
+
+    //   cmd.ExecuteNonQuery();
       conn.Close();
       if(conn != null)
       {
         conn.Dispose();
       }
-      return aStylist;
+      return allStylists;
     }
     public static void ClearAll()
     {

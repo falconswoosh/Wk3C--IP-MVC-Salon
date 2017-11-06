@@ -2,20 +2,18 @@
   Layout = "_Layout";
 }
 
-<div class="container">
 <h1 id="stylists">Stylists</h1>
   <ul>
 
-@if (Model != null)
-{
-@foreach (var stylist in Model)
-{
-<li class="stylistsOut"><a href='/stylist/@stylist.id'>@stylist.lastname, @stylist.firstname</a></li>
-}
-}
-else if (Model == null)
-{
-<p> Stylist List is blank - create a new stylist now.</p>
-}
+    @if (Model != null)
+    {
+    @foreach (var stylist in Model)
+    {
+    <li class="stylistsOut"><a href="/stylist/@stylist.Id">@stylist.LastName, @stylist.FirstName</a></li>
+    }
+    }
+    else if (Model == null)
+    {
+    <p> Stylist List is blank - create a new stylist now.</p>
+    }
   </ul>
-</div>
