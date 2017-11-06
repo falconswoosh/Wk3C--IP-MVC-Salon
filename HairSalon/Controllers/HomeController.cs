@@ -38,5 +38,11 @@ namespace HairSalon.Controllers
         Stylist foundStylist = Stylist.Find(id);
         return View(foundStylist);
       }
+      [HttpGet("/stylist/clear")]
+      public ActionResult ClearAll()
+      {
+        Stylist.ClearAll();
+        return Redirect("/");
+      }
     }
 }

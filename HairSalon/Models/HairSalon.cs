@@ -109,6 +109,7 @@ namespace HairSalon.Models
       {
         conn.Dispose();
       }
+      return;
     }
     public static void Delete(int id = 0)
     {
@@ -135,10 +136,10 @@ namespace HairSalon.Models
       }
       return;
     }
-    public static Stylist Find(int id = 0)
+    public static Stylist Find(int id)
     {
-      if (id > 0)
-      {
+      // if (id > 0)
+      // {
         MySqlConnection conn = DB.Connection();
         conn.Open();
 
@@ -169,10 +170,11 @@ namespace HairSalon.Models
         {
           conn.Dispose();
         }
+        // return foundStylist;
         return foundStylist;
-      }
-      Stylist errorStylist = new Stylist("Error","Error",0);
-      return errorStylist;
+      // }
+      // Stylist errorStylist = new Stylist("Error","Error",0);
+      // return errorStylist;
     }
 
     public void UpdateStylist(int id, string lastname, string firstname)
