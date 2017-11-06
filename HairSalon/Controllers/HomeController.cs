@@ -31,5 +31,12 @@ namespace HairSalon.Controllers
         newStylist.Save();
         return Redirect("/");
       }
+      [HttpGet("/stylist/{id}")]
+      public ActionResult StylistDetail(int id)
+      {
+        List<Stylist> allStylists = Stylist.GetAll();
+        Stylist foundStylist = Stylist.Find(id);
+        return View(foundStylist);
+      }
     }
 }
