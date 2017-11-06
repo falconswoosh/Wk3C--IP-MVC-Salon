@@ -10,7 +10,7 @@
 {
 @foreach (var contact in Model)
 {
-<li class="stylistsOut"><a href='/stylists/@stylist.Id()'>@stylist.LastName(), @stylist.FirstName()</a></li>
+<li class="stylistsOut"><a href='/stylist/@stylist.id()'>@stylist.GetLastName(), @stylist.GetFirstName()</a></li>
 }
 }
 else if (Model == null)
