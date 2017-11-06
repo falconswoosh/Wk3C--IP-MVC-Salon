@@ -12,12 +12,12 @@ namespace HairSalon.Controllers
       {
         return View();
       }
-      [HttpGet("/stylist")]
+      [HttpGet("/stylist/new")]
       public ActionResult AddStylist()
       {
         return View();
       }
-      [HttpPost("/stylist/new")]
+      [HttpPost("/stylist")]
       public ActionResult NewStylist()
       {
         Stylist newStylist = new Stylist(Request.Form["lastname"], Request.Form["firstname"]);

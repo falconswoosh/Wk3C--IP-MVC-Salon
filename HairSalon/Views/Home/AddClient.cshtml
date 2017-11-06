@@ -2,3 +2,10 @@
   Layout = "_Layout";
 }
 <h1>Add A Client</h1>
+<form id="newClient" action="/client" method="post">
+  <label for="lastname">Enter Last Name</label>
+  <input type="text" name="lastname" id="lastname">
+  <label for="firstname">Enter First Name</label>
+  <input type="text" name="firstname" id="firstname">
+  <button class="button" type="submit" name="button">Add</button>
+</form>

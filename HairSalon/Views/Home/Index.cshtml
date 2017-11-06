@@ -8,9 +8,9 @@
 
 @if (Model != null)
 {
-@foreach (var contact in Model)
+@foreach (var stylist in Model)
 {
-<li class="stylistsOut"><a href='/stylist/@stylist.id()'>@stylist.GetLastName(), @stylist.GetFirstName()</a></li>
+<li class="stylistsOut"><a href='/stylist/@stylist.id'>@stylist.lastname, @stylist.firstname</a></li>
 }
 }
 else if (Model == null)
