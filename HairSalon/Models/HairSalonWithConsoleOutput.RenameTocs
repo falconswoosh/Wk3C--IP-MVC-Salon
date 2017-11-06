@@ -52,7 +52,7 @@ namespace HairSalon.Models
 
         MySqlParameter lastname = new MySqlParameter();
         lastname.ParameterName = "@lastname";
-        lastname.Value = LastName;
+        lastname.Value = this.LastName;
         cmd.Parameters.Add(lastname);
 
         MySqlParameter firstname = new MySqlParameter();
@@ -175,6 +175,9 @@ namespace HairSalon.Models
 
     public void UpdateStylist(int id, string lastname, string firstname)
     {
+//<START> Below was only needed for testing to ensure what was passed from .Tests.cs file is what was received and acted on.
+        Console.WriteLine("From UpdateStart: " + lastname +", "+firstname+", "+"ID: "+id);
+//<END>
         MySqlConnection conn = DB.Connection();
         conn.Open();
 
@@ -196,7 +199,12 @@ namespace HairSalon.Models
         newFirstName.ParameterName = "@newFirstName";
         newFirstName.Value = firstname;
         cmd.Parameters.Add(newFirstName);
-
+//<START> Below was only needed for testing to ensure what was passed from .Tests.cs file is what was received and acted on.
+        int LastId = Convert.ToInt32(cmd.Parameters["@searchId"].Value);
+        string PostedLastName = Convert.ToString(cmd.Parameters["@newLastName"].Value);
+        string PostedFirstName = Convert.ToString(cmd.Parameters["@newFirstName"].Value);
+        Console.WriteLine("From UpdateEnd: " + PostedLastName +", "+PostedFirstName+", "+"ID: "+LastId);
+//<END>
         var rdr = cmd.ExecuteNonQuery();
         conn.Close();
 

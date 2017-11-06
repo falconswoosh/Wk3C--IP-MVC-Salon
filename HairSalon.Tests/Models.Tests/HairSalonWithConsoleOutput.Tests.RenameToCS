@@ -70,7 +70,6 @@ namespace HairSalon.Models.Tests
         [TestMethod]
         public void Find_FindAStylistInDatabase_0()
         {
-            Stylist.ClearAll();
             Stylist testStylist = new Stylist("Richardson", "Bethany");
             testStylist.Save();
 
@@ -80,16 +79,19 @@ namespace HairSalon.Models.Tests
         }
         [TestMethod]
         public void Delete_DeleteStylistFromDatabase_0()
+        [TestMethod]
+        public void Delete_DeleteStylistFromDatabase_0()
         {
             Stylist testStylist = new Stylist("Richardson", "Bethany");
             int numOfStylistsB4 = Stylist.GetAll().Count;
-
+        Console.WriteLine("numOfStylistsB4: "+numOfStylistsB4);
             testStylist.Save();
             int newID = testStylist.Id;
+        Console.WriteLine("TestnewID: "+newID);
             Stylist.Delete(newID);
             int numOfStylistsAfter =  Stylist.GetAll().Count;
-
-            Assert.AreEqual(numOfStylistsB4, numOfStylistsAfter);
+        Console.WriteLine("numOfStylistsAfter: "+numOfStylistsAfter);
+            Assert.AreNotEqual(numOfStylistsB4, numOfStylistsAfter);
         }
         [TestMethod]
         public void UpdateStylist_UpdateAStylistInDatabase_0()
@@ -103,6 +105,8 @@ namespace HairSalon.Models.Tests
 
             Stylist newStylist = new Stylist(newLastName, newFirstName);
             newStylist.UpdateStylist(testStylist.Id, newStylist.LastName, newStylist.FirstName);
+
+            Console.WriteLine("From UpdateTest: " + newStylist.LastName  +", "+newStylist.FirstName+", "+"ID: "+testStylist.Id);
 
             Assert.AreNotEqual(testStylist.LastName, newStylist.LastName);
             Assert.AreNotEqual(testStylist.FirstName, newStylist.FirstName);
