@@ -43,13 +43,16 @@ namespace HairSalon.Controllers
       {
         return View();
       }
+
       [HttpPost("/client")]
       public ActionResult NewClient()
       {
-        Client newClient = new Client(Request.Form["lastname"], Request.Form["firstname"], Request.Form["stylist_id"]);
+        Client newClient = new Client(Request.Form["lastname"], Request.Form["firstname"],Request.Form["stylist_id"]);
         newClient.Save();
-        return Redirect("/");
+        return View();
+
       }
+
       [HttpGet("/client")]
       public ActionResult ViewClient()
       {

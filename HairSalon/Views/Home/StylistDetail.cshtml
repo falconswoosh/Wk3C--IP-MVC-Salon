@@ -1,6 +1,7 @@
 @{
   Layout = "_Layout";
 }
+
 <h1>Stylist Details</h1>
 
 <div class="stylistDetails">
@@ -14,8 +15,8 @@
       <input type="text" name="lastname" id="lastname">
       <label for="firstname">Enter First Name</label>
       <input type="text" name="firstname" id="firstname">
-      <input type="hidden" name="stylist_id" id="stylist_id" value = @Model.Id>
-      <button class="button" type="submit" name="button">Add</button>
+      <input type="hidden" type="number" name="stylist_id" id="stylist_id" value = @Model.Id>
+      <button class="button" type="submit" name="btnSubmit" id="btnSubmit"  value = @Model.Id>Add</button>
     </form>
   </div>
 
